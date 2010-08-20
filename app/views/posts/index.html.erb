@@ -1,0 +1,7 @@
+<h1><%= params[:word] ? params[:word] : "Blather" %></h1>
+
+<%= render @posts %>
+
+<br />
+
+<%= link_to 'New Post', new_post_path %>

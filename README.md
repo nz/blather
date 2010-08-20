@@ -46,3 +46,11 @@ All of the above in one place for your convenience:
     echo "gem 'sunspot_rails', '1.2rc2'" >> Gemfile
     bundle install
     echo "Sunspot.config.solr.url = ENV['WEBSOLR_URL']" > config/initializers/websolr.rb
+
+
+# TODO
+
+## Sunspot patches
+
+* Get rid of `returning` in `sunspot_rails`
+* Replace `RAILS_ROOT` with `(RAILS_ROOT || Rails.root)` (or something version-savvier)
