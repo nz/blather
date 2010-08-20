@@ -38,3 +38,11 @@ This command will generate a default `config/sunspot.yml` which you may edit to 
         port: 80
         path: /solr/0a1b2c3d4e
         log_level: WARNING
+
+### The copy-paste version
+
+All of the above in one place for your convenience:
+
+    echo "gem 'sunspot_rails', '1.2rc2'" >> Gemfile
+    bundle install
+    echo "Sunspot.config.solr.url = ENV['WEBSOLR_URL']" > config/initializers/websolr.rb

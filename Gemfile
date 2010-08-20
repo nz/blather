@@ -28,3 +28,4 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem 'sunspot_rails', '1.2rc2'
