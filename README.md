@@ -12,9 +12,11 @@ Want to see all of this in one single copy-pasteable block? Skip to "Delicious c
 
 First, add `sunspot_rails` to your `Gemfile`:
 
-    gem 'sunspot_rails', '1.2rc2'
+    gem 'sunspot_rails', :git => 'http://github.com/outoftime/sunspot.git'
 
 Next, run `bundle install` from the root of your application to install `sunspot_rails` and its dependencies.
+
+*N.B: As of 24Aug10 we are using Sunspot from 1.2 since there are a few Rails 3 fixes not yet released in the gem.*
 
 ### Configure Sunspot for Websolr
 
@@ -46,11 +48,3 @@ All of the above in one place for your convenience:
     echo "gem 'sunspot_rails', '1.2rc2'" >> Gemfile
     bundle install
     echo "Sunspot.config.solr.url = ENV['WEBSOLR_URL']" > config/initializers/websolr.rb
-
-
-# TODO
-
-## Sunspot patches
-
-* Get rid of `returning` in `sunspot_rails`
-* Replace `RAILS_ROOT` with `(RAILS_ROOT || Rails.root)` (or something version-savvier)
