@@ -1,9 +1,8 @@
 Blather::Application.routes.draw do
   
   root :to => "posts#index"
-  match ':word', :to => "posts#index"
-  
   resources :posts
+  match 'word/:word', :to => "posts#index"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

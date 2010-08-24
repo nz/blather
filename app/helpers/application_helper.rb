@@ -6,7 +6,7 @@ module ApplicationHelper
   
   def auto_link_words(text)
     text.gsub(/(\w+)/) do |word|
-      link_to word, "/#{word.downcase}"
+      link_to word, "/word/#{word.downcase}"
     end.html_safe
   end
   
