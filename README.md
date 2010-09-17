@@ -16,7 +16,7 @@ First, add `sunspot_rails` to your `Gemfile`:
 
 Next, run `bundle install` from the root of your application to install `sunspot_rails` and its dependencies.
 
-*N.B: As of 24Aug10 we are using Sunspot from 1.2 since there are a few Rails 3 fixes not yet released in the gem.*
+*N.B: As of 24Aug10 we are using Sunspot from git since there are a few Rails 3 fixes not yet released in the RC gem.*
 
 ### Configure Sunspot for Websolr
 
